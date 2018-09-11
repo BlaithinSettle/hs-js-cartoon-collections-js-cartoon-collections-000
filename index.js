@@ -35,14 +35,17 @@ findTheCheese(['apple', 'gouda', 'banana', 'cheddar'])
 
 function wordsWithB(words) {
   const wordsB="b";
-  const emptyArray=[];
+  const bWords=[];
   for (var i=0; i<words.length; i++){
-    if(wordsB.includes(words[i])){
-      emptyArray.push(words[i]);
+    if(words.startsWith(bWords)){
+      bWords.push(words[i]);
     }
   }
-  return emptyArray;
+  return bWords;
 }
+
+"string".startsWith('str')  //true
+"string".startsWith('a') //false
 
 wordsWithB(['apple', 'banana', 'cheddar']) // ['banana']
 wordsWithB(['apple', 'banana', 'butter']) // ['banana', 'butter']
