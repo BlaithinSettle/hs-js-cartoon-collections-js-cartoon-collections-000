@@ -20,7 +20,7 @@ function longPlaneteerCalls(words) {
 }
 
 function findTheCheese(foods) {
-  const cheese = ["cheddar", "gouda", "camembert"];
+  const cheese = ["cheddar", "gouda", "camembert", "swiss"];
   for (let i = 0; i < foods.length; i++) {
    
       if (cheese.includes(foods[i])) {
@@ -30,3 +30,5 @@ function findTheCheese(foods) {
   
   return "no cheese!";
 }
+
+findTheCheese(['apple', 'banana', 'cheddar'])
