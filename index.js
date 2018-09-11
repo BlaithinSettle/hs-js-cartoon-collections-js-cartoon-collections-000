@@ -37,7 +37,7 @@ function wordsWithB(words) {
   const wordsB="b";
   const bWords=[];
   for (var i=0; i<words.length; i++){
-    if(words.startsWith(bWords)){
+    if(words[i].startsWith("b")){
       bWords.push(words[i]);
     }
   }
