@@ -31,4 +31,19 @@ function findTheCheese(foods) {
   return "no cheese!";
 }
 
-findTheCheese(['apple', 'banana', 'cheddar'])
+findTheCheese(['apple', 'gouda', 'banana', 'cheddar'])
+
+function wordsWithB(words) {
+  const wordsB="b";
+  const emptyArray=[];
+  for (var i=0; i<words.length; i++){
+    if(wordsB.includes(words[i])){
+      emptyArray.push(words[i]);
+    }
+  }
+  return emptyArray;
+}
+
+wordsWithB(['apple', 'banana', 'cheddar']) // ['banana']
+wordsWithB(['apple', 'banana', 'butter']) // ['banana', 'butter']
+wordsWithB(['apple', 'cheddar']) // []
